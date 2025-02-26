@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+   
+    <script>
+
+      const array = ['hi', 'searsch', 'seasrch', 'hello', 'search'];
+
+      let y = 0;
+      for (let i = 0; i < array.length; i++) {
+        const x = array[i];
+        if (x === 'search') {
+          console.log(i);
+          y++;
+          break;
+        }
+        if (i === array.length - 1 ) {
+          if(y === 0 ) {
+            console.log(-1);
+          }
+          y=0;
+        }
+      }
+
+
+      
+
+
+
+    </script>
+    
+
+  </body>
+</html>

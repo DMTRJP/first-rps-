@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <button onclick = "
+      document.querySelector('.js-p-choice')
+      .innerHTML = 'You chose: heads';
+      ">heads</button>
+    <button onclick = "
+      document.querySelector('.js-p-choice')
+        .innerHTML = 'You chose: tails';
+    ">tails</button>
+
+    <p class = "js-p-choice">aaa</p>
+
+
+    <input placeholder = "Name" class="js-name-input" 
+    onkeydown = "
+          if (event.key === 'Enter') {
+            enter(event)
+          }
+    "> 
+    <button onclick = "
+      enter(event)
+    ">Submit</button>
+    <p class = "js-display-text"></p>
+
+    <script>
+      function enter(event) {
+        const x = document.querySelector('.js-name-input');
+      document.querySelector('.js-display-text').innerHTML = `Your name is: ${x.value}`;
+      }
+    </script>
+  </body>
+</html>

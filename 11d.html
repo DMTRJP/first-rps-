@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+
+    <script>
+
+      for (let i = 0; i <= 10; i+=2) {
+        console.log(i);
+      }
+
+      for (let i = 5; i >= 0; i--) {
+        console.log(i);
+      }
+
+      const nums = [1, 2, 3, 4];
+
+      let x = nums.length - 1;
+
+      for (let i = 0; i <= x; i++) {
+        nums[i]++;
+      }
+
+      console.log(nums);
+
+      function addOne(array) {
+        let newArray = [];
+        for (let i = 0; i<= array.length - 1; i++) {
+          newArray[i] = array[i] + 1;
+        }
+        return newArray;
+      }
+
+      console.log(addOne(nums));
+
+      const array1 = [1, 2, 3, 4];
+      
+      function addNum(array, inc) {
+        for (let i = 0; i < array.length; i++) {
+          array[i] += inc;
+        }
+        return array;
+      }
+
+      console.log('asf');
+      console.log(addNum(array1, 2));
+
+      function addArrays(array1, array2) {
+        if (array1.length > array2.length) x = array2.length;
+        else x = array1.length;
+        let arraySum = [];
+        for (let i = 0; i<x; i++) {
+          arraySum[i] = array1[i] + array2[i];
+        }
+        return arraySum;
+      }
+
+      console.log('---');
+      console.log(addArrays([1,2,3], [4,5,6,7]));
+
+      function countPositive (array) {
+        let pos = 0;
+        for (let i = 0; i<array.length; i++) {
+          if (array[i] >= 0) pos++;
+        }
+        return pos;
+      }
+
+      console.log('_????????????????');
+      console.log(countPositive([1,-2,-3,4,-5,-2]));
+
+
+    </script>
+
+  </body>
+</html>

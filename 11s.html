@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+   
+    <script>
+    const noEggs = [];
+     function removeEggs(array) {
+      
+      let j = 0;
+      let x = 0;
+      for (let i = 0; i<array.length; i++) {
+          if (array[i] === 'egg' && x <= 1){
+            x++;
+            continue;
+          }
+          noEggs[j] = array[i];
+          j++;
+          
+      }
+     }
+
+     removeEggs(['egg', 'egg', 'egg', 'apple', 'orange', 'banana', 'egg', 'yogurt']);
+
+     console.log(noEggs);
+    
+    </script>
+    
+
+  </body>
+</html>

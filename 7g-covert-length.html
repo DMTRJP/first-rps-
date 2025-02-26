@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+
+  <body>
+    <script>
+      let y = 0;
+      function convertLength(length, from, to){
+        y = 0;
+        let x = length;
+        if (from === 'km'){
+          if (to === 'km'){
+            y++;
+            x = length;
+            console.log('No changes.');
+            return x;
+          }
+          else if (to === 'miles'){
+            y++;
+            x = x/1.6;
+            console.log(`Converted ${length}${from} to ${x}${to}.`);
+            return x;
+          } else if (to === 'ft'){
+            y++;
+            x = x*3281;
+            console.log(`Converted ${length}${from} to ${x}${to}.`);
+            return x;
+          }
+        }
+        if (from === 'miles'){
+          if (to === 'miles'){
+            y++;
+            x = length;
+            console.log('No changes.');
+            return x;
+          }
+          else if (to === 'km'){
+            y++;
+            x = x*1.6;
+            console.log(`Converted ${length}${from} to ${x}${to}.`);
+            return x;
+          } else if(to === 'ft'){
+            y++;
+            x = x*5280;
+            console.log(`Converted ${length}${from} to ${x}${to}.`);
+            return x;
+          }
+        }
+        if (from === 'ft'){
+          if (to === 'ft'){
+            y++;
+            x = length;
+            console.log('No changes')
+            return x;
+          } else if (to === 'km'){
+            y++;
+            x = x/3281;
+            console.log(`Converted ${length}${from} to ${x}${to}.`);
+            return x;
+          } else if (to === 'miles'){
+            y++;
+            x = x/5280;
+            console.log(`Converted ${length}${from} to ${x}${to}.`);
+            return x;
+          }
+          
+
+          
+          
+        }
+        if (y===0){
+            return `Cant convert ${from} into ${to}`;
+          }
+
+      }
+
+      
+      console.log(convertLength(5, 'kita', 'kita'));
+
+    </script>
+  </body>
+</html>

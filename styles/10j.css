@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial;
+}
+
+.button {
+  color: white;
+  background-color: rgb(50, 50, 50);
+  font-size: 26px;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.clear {
+  font-size: 17px;
+}
+
+.input {
+  font-size: 45px;
+  margin: 15px;
+  margin-left: 0px;
+}
